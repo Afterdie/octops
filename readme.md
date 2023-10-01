@@ -12,20 +12,26 @@
 - [CLI](#cli) (Intermediate)
 3. [Introduction to Python](#introduction-to-python)
 4. [Introduction to Kivy](#introduction-to-kivy)
-- [Installation of Kivy](#installation-of-kivy)
-- [Kivy Application](#kivy-application)
-- [Kivy Language](#kivy-language)
-- [Kivy Widgets](#kivy-widgets)
-- [Kivy Properties](#kivy-properties)
-- [Kivy Events](#kivy-events)
-- [Kivy Graphics](#kivy-graphics)
-- [Label](#label)
-- [Button](#button)
-- [Image](#image)
-- [Slider](#slider)
-- [Kv layouts](#kv-layouts)
-- [Screens](#screens)
-- [Kivy Animations](#kivy-animations)
+<details>
+    <summary>
+        Contents
+    </summary> 
+    <li><a href="#installation-of-kivy">Installation of Kivy</a></li>
+    <li><a href="#kivy-application">Kivy Application</a></li>
+    <a href="#kivy-language"><li>Kivy Language</li></a>
+    <a href="kivy-widgets"><li>Kivy Widgets</li></a>
+    <a href="#kivy-properties"><li>Kivy Properties</li></a>
+    <a href="#kivy-events"><li>Kivy Events</li></a>
+    <a href="#kivy-graphics"><li>Kivy Graphics</li></a>
+    <a href="#label"><li>Label</li></a>
+    <a href="#button"><li>Button</li></a>
+    <a href="#image"><li>Image</li></a>
+    <a href="#slider"><li>Slider</li></a>
+    <a href="#kv-layouts"><li>Kv layouts</li></a>
+    <a href="#screens"><li>Screens</li></a>
+    <a href="#kivy-animations"><li>Kivy Animations</li></a>
+</details>
+
 5. [About the Game](#about-the-game)
 6. [File Structure](#file-structure)
 7. [Issue Listing](#issue-listing)
