@@ -3,6 +3,10 @@
 </h3>
 <h1 align='center'>Octops</h1>
 
+###  The duration for the HACKATHON has been extended !
+
+Make sure you ⭐ the repo !
+
 
 # Table of Contents
 
