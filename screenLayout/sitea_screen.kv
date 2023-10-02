@@ -44,8 +44,10 @@
             size_hint: None,None
             size: dp(80), dp(80)
             pos: dp(261), dp(347)
-            disabled: True
-
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 2)
+                root.check_product(self, 2)
 
 
 
@@ -100,26 +102,25 @@
                 center_y: self.parent.top - 10
 
         Button:
-            id: 5
+            id: 5  # Corrected button ID
             text: "Ω"
             font_size: "65sp"
-            color: 255,255,255
+            color: 255, 255, 255
             halign: 'center'
             valign: 'bottom'
-            background_color: 255,255,255
-            size_hint: None,None
+            background_color: 255, 255, 255
+            size_hint: None, None
             size: dp(80), dp(80)
             pos: dp(261), dp(242)
             disabled: True if splash_bg_after.opacity == 1 else False
             on_press:
-                root.change_img(self, 4)
-                root.check_product(self, 4)
-
+                root.change_img(self, 5)  # Corrected button ID
+                root.check_product(self, 5)  # Corrected button ID
             Image:
-                id: 5
+                id: 5  # Corrected button ID
                 source: 'assets/img/symbols/off.png'
                 center_x: self.parent.center_x
-                center_y: self.parent.top - 10
+                center_y: self.parent.top - 10    
 
         Button:
             id: 6
@@ -222,10 +223,10 @@
 
         # Initialize return button to map window
         Button:
-            size_hint: None,None
+            size_hint: None, None
             size: dp(60), dp(60)
             pos: dp(12), dp(523)
-            background_color: 0,0,0,0
+            background_color: 0, 0, 0, 0
             on_press: root.manager.current = 'map'
 
             Image:
