@@ -1,6 +1,7 @@
 devMode = False
 
 sitea = devMode
+long = devMode
 doors = devMode
 spawn = devMode
 passcode = 1275 #linked to bomb hints png
@@ -13,6 +14,13 @@ def set_sitea():
 
 def get_sitea():
     return sitea
+
+def set_long():
+    global long
+    long = not long
+
+def get_long():
+    return long
 
 def set_doors():
     global doors

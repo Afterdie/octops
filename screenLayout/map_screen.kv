@@ -48,6 +48,21 @@
                 center_x: self.parent.center_x
                 center_y: self.parent.center_y
 
+        #long
+        Button:
+            size_hint: None,None
+            size: dp(135), dp(135)
+            pos: dp(430), dp(225)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'long'
+
+            Image:
+                source: 'assets/img/map_long.png'
+                size_hint: (1, 1)
+                size: dp(120), dp(120)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
         #doors
         Button:
             size_hint: None,None
