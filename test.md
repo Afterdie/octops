@@ -1,3 +1,1 @@
 # Sample contribution 
-
-- MLSA KIIT
