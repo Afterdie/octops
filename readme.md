@@ -3,7 +3,9 @@
 </h3>
 <h1 align='center'>Octops</h1>
 
+### The timeline for the hackathon has been extended !
 
+Make sure to ⭐ the repo 
 # Table of Contents
 
 1. [Introduction](#introduction)
