@@ -1,0 +1,61 @@
+<MySlider@Slider>
+    cursor_image: "assets/img/spawn_knob.png"
+    cursor_size: dp(70), dp(22.5)
+    orientation: 'vertical'
+    background_width: "0sp"
+    padding: "24sp"
+    size_hint: None, 0.428
+    min: 0
+    max: 100
+
+<SpawnScreen>:
+
+    FloatLayout:
+        BoxLayout:
+            id: splash_bg
+            opacity: 1
+            AsyncImage:
+                source: 'assets/img/spawn_splash.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        MySlider:
+            id: slide1
+            value: 0
+            pos_hint: {'center_x': 0.34, 'center_y': 0.485}  # Centered
+            on_value: root.slider_val_change()
+
+        MySlider:
+            id: slide2
+            value: 20
+            pos_hint: {'center_x': 0.5, 'center_y': 0.485}  # Centered
+            on_value: root.slider_val_change()
+
+        MySlider:
+            id: slide3
+            value: 10
+            pos_hint: {'center_x': 0.66, 'center_y': 0.485}  # Adjust position as needed
+            on_value: root.slider_val_change()
+
+        BoxLayout:
+            id: splash_bg_after
+            orientation: 'vertical'
+            opacity: 0
+            AsyncImage:
+                source: 'assets/img/spawn_splash_after.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        Button:
+            size_hint: None,None
+            size: dp(60), dp(60)
+            pos: dp(12), dp(523)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'map'
+
+            Image:
+                source: 'assets/img/button_return.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y

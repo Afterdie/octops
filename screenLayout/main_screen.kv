@@ -1,0 +1,61 @@
+<MainScreen>:
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'assets/img/main_splash.png'
+        Rectangle:
+            pos: dp(600) - dp(244), dp(600)- dp(92)
+            size: dp(244), dp(92)
+            source: 'assets/img/main_logo.png'
+        Rectangle:
+            pos: dp(8), dp(502)
+            size: dp(83), dp(88)
+            source: 'assets/img/main_mascot.png'
+
+    FloatLayout:
+        orientation: "vertical"
+
+        Button:
+            size_hint: None,None
+            size: dp(147), dp(61)
+            pos: dp(230), dp(208)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'map'
+
+            Image:
+                source: 'assets/img/main_btn_play.png'
+                size_hint: (1, 1)
+                size: dp(147), dp(61)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        Button:
+            size_hint: None,None
+            size: dp(147), dp(61)
+            pos: dp(231), dp(129)
+            background_color: 0,0,0,0
+            on_press: app.stop()
+
+            Image:
+                source: 'assets/img/main_btn_quit.png'
+                size_hint: (1, 1)
+                size: dp(147), dp(61)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+        
+        Button:
+            size_hint: None, None
+            pos: dp(8), dp(502)
+            size: dp(83), dp(88)
+            background_color: 0,0,0,0
+            on_press: root.website()
+
+        Label:
+            id: timer_value
+            text: ""
+            font_size: dp(50)
+            font_name: 'assets/PixeloidSansBold-PKnYd.ttf'
+            color: 1,1,1
+            size_hint: None, None 
+            pos: dp(40), dp(10)

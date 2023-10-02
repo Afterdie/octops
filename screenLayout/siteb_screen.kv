@@ -1,0 +1,90 @@
+<SiteBScreen>:
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'assets/img/siteb_splash.png'
+
+        Rectangle:
+            source: "assets/img/siteb_bomb.png"
+            size: dp(447), dp(387)
+            pos: dp(47), dp(162)
+
+    FloatLayout:
+        Button:
+            id: defuse_btn
+            size_hint: None,None
+            size: dp(205), dp(68)
+            pos: dp(197), dp(43)
+            background_color: 0,0,0,0
+            on_press: root.defuse_btn_press()
+
+            Image:
+                id: defuse_img
+                color: 1, 1, 1, 0.2
+                source: 'assets/img/siteb_btn_defuse.png'
+                size_hint: (1, 1)
+                size: dp(205), dp(68)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        AsyncImage:
+            id: defcon_gif
+            opacity: 0
+            color: 0.3, 0.3, 0.3, 1
+            source: 'assets/img/siteb_defcon.gif'
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: 1, 1
+
+        AsyncImage:
+            id: octocat_prompt
+            source: 'assets/img/siteb_prompt.png'
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: None,None
+            color: 0,0,0,0
+            size: dp(302), dp(109)
+            pos: dp(-100), dp(154)
+
+        AsyncImage:
+            id: octocat_hint
+            source: 'assets/img/siteb_hint_prompt.png'
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: None,None
+            color: 0,0,0,0
+            size: dp(340), dp(156)
+            pos: dp(-100), dp(155)
+
+        AsyncImage:
+            id: octocat_defcon_prompt
+            source: 'assets/img/siteb_defcon_prompt.png'
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: None,None
+            color: 0,0,0,0
+            size: dp(340), dp(341)
+            pos: dp(-100), dp(155)
+
+        AsyncImage:
+            id: octocat_icon
+            source: 'assets/img/siteb_ct.png'
+            allow_stretch: True
+            keep_ratio: False
+            size_hint: None,None
+            color: 0,0,0,0
+            size: dp(328), dp(235)
+            pos: dp(-100), dp(0)
+
+        Button:
+            size_hint: None,None
+            size: dp(60), dp(60)
+            pos: dp(12), dp(523)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'map'
+
+            Image:
+                source: 'assets/img/button_return.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y

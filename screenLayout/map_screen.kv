@@ -1,0 +1,79 @@
+<MapScreen>:
+    canvas.before:
+        #map component
+        Rectangle:
+            source: "assets/img/map_map.png"
+            size: dp(534), dp(534)
+            pos: self.center_x - dp(534)/2, self.center_y - dp(534)/2
+
+    FloatLayout:
+        Button:
+            size_hint: None,None
+            size: dp(60), dp(60)
+            pos: dp(12), dp(523)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'main'
+
+            Image:
+                source: 'assets/img/button_return.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+        #siteB
+        Button:
+            size_hint: None,None
+            size: dp(135), dp(135)
+            pos: dp(91), dp(408)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'siteb'
+
+            Image:
+                source: 'assets/img/map_siteB.png'
+                size_hint: (1, 1)
+                size: dp(135), dp(135)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #siteA
+        Button:
+            size_hint: None,None
+            size: dp(135), dp(135)
+            pos: dp(365), dp(360)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'sitea'
+
+            Image:
+                source: 'assets/img/map_siteA.png'
+                size_hint: (1, 1)
+                size: dp(135), dp(135)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #doors
+        Button:
+            size_hint: None,None
+            size: dp(135), dp(135)
+            pos: dp(297), dp(147)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'doors'
+
+            Image:
+                source: 'assets/img/map_doors.png'
+                size_hint: (1, 1)
+                size: dp(135), dp(135)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #spawn
+        Button:
+            size_hint: None,None
+            size: dp(135), dp(135)
+            pos: dp(117), dp(52)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'spawn'
+
+            Image:
+                source: 'assets/img/map_spawn.png'
+                size_hint: (1, 1)
+                size: dp(135), dp(135)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y

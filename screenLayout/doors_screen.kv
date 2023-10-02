@@ -1,0 +1,188 @@
+<DoorsScreen>
+    FloatLayout:
+        BoxLayout:
+            id: splash_bg
+            opacity: 1
+            AsyncImage:
+                source: 'assets/img/doors_splash.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        Label:
+            id: label_1
+            text: "0"
+            size: dp(18), dp(28)
+            font_name: 'assets/PixeloidSansBold-PKnYd.ttf'
+            color: 1, 178/255, 4/255, 1
+            size_hint: None, None
+            pos: dp(214), dp(322)
+
+        Label:
+            id: label_2
+            text: "0"
+            size: dp(18), dp(28)
+            font_name: 'assets/PixeloidSansBold-PKnYd.ttf'
+            color: 1, 178/255, 4/255, 1
+            size_hint: None, None
+            pos: dp(266), dp(322)
+
+        Label:
+            id: label_3
+            text: "0"
+            size: dp(18), dp(28)
+            font_name: 'assets/PixeloidSansBold-PKnYd.ttf'
+            color: 1, 178/255, 4/255, 1
+            size_hint: None, None
+            pos: dp(317), dp(322)
+
+        Label:
+            id: label_4
+            text: "0"
+            size: dp(18), dp(28)
+            font_name: 'assets/PixeloidSansBold-PKnYd.ttf'
+            color: 1, 178/255, 4/255, 1
+            size_hint: None, None
+            pos: dp(369), dp(322)
+
+        #btn_up_1
+        Button:
+            size_hint: None,None
+            size: dp(33), dp(32)
+            pos: dp(206), dp(356)
+            background_color: 0,0,0,0
+            on_press: root.increment_value(label_1)
+
+            Image:
+                source: 'assets/img/doors_btn_up.png'
+                size_hint: (1, 1)
+                size: dp(33), dp(32)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #btn_up_2
+        Button:
+            size_hint: None,None
+            size: dp(33), dp(32)
+            pos: dp(258), dp(356)
+            background_color: 0,0,0,0
+            on_press: root.increment_value(label_2)
+
+            Image:
+                source: 'assets/img/doors_btn_up.png'
+                size_hint: (1, 1)
+                size: dp(33), dp(32)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #btn_up_3
+        Button:
+            size_hint: None,None
+            size: dp(33), dp(32)
+            pos: dp(310), dp(356)
+            background_color: 0,0,0,0
+            on_press: root.increment_value(label_3)
+
+            Image:
+                source: 'assets/img/doors_btn_up.png'
+                size_hint: (1, 1)
+                size: dp(33), dp(32)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #btn_up_4
+        Button:
+            size_hint: None,None
+            size: dp(33), dp(32)
+            pos: dp(362), dp(356)
+            background_color: 0,0,0,0
+            on_press: root.increment_value(label_4)
+
+            Image:
+                source: 'assets/img/doors_btn_up.png'
+                size_hint: (1, 1)
+                size: dp(33), dp(32)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #btn_down_1
+        Button:
+            size_hint: None,None
+            size: dp(33), dp(32)
+            pos: dp(206), dp(284)
+            background_color: 0,0,0,0
+            on_press: root.decrement_value(label_1)
+
+            Image:
+                source: 'assets/img/doors_btn_down.png'
+                size_hint: (1, 1)
+                size: dp(33), dp(32)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #btn_down_2
+        Button:
+            size_hint: None,None
+            size: dp(33), dp(32)
+            pos: dp(258), dp(284)
+            background_color: 0,0,0,0
+            on_press: root.decrement_value(label_2)
+
+            Image:
+                source: 'assets/img/doors_btn_down.png'
+                size_hint: (1, 1)
+                size: dp(33), dp(32)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #btn_down_3
+        Button:
+            size_hint: None,None
+            size: dp(33), dp(32)
+            pos: dp(310), dp(284)
+            background_color: 0,0,0,0
+            on_press: root.decrement_value(label_3)
+
+            Image:
+                source: 'assets/img/doors_btn_down.png'
+                size_hint: (1, 1)
+                size: dp(33), dp(32)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #btn_down_4
+        Button:
+            size_hint: None,None
+            size: dp(33), dp(32)
+            pos: dp(362), dp(284)
+            background_color: 0,0,0,0
+            on_press: root.decrement_value(label_4)
+
+            Image:
+                source: 'assets/img/doors_btn_down.png'
+                size_hint: (1, 1)
+                size: dp(33), dp(32)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        BoxLayout:
+            id: splash_bg_after
+            orientation: 'vertical'
+            opacity: 0
+            AsyncImage:
+                source: 'assets/img/doors_splash_after.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+        
+        Button:
+            size_hint: None,None
+            size: dp(60), dp(60)
+            pos: dp(12), dp(523)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'map'
+
+            Image:
+                source: 'assets/img/button_return.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
