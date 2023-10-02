@@ -44,10 +44,10 @@
             size_hint: None,None
             size: dp(80), dp(80)
             pos: dp(261), dp(347)
-            disabled: True
-
-
-
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 2) # Call function to toggle button image from grey to green upon press
+                root.check_product(self, 2) # Call function to check whether correct combination entered or not
 
             Image:
                 id: 2
@@ -112,8 +112,8 @@
             pos: dp(261), dp(242)
             disabled: True if splash_bg_after.opacity == 1 else False
             on_press:
-                root.change_img(self, 4)
-                root.check_product(self, 4)
+                root.change_img(self, 5)
+                root.check_product(self, 5)
 
             Image:
                 id: 5

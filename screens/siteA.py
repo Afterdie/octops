@@ -18,7 +18,7 @@ class SiteAScreen(Screen):
     def change_img(self, button, idOG):  # Toggle the button states to on(green)/off(grey) on press
         idOG_dynamic = f"{idOG}"
         widget = getattr(self.ids, idOG_dynamic, None)
-        widget.source = "assets/img/symbols/off.png" if widget.source == "assets/img/symbols/off.png" else "assets/img/symbols/off.png"
+        widget.source = "assets/img/symbols/on.png" if widget.source == "assets/img/symbols/off.png" else "assets/img/symbols/on.png"
 
     def check_product(self, instance, id):  # Check for correct code combination
         button_id = id
