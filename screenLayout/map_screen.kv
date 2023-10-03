@@ -52,7 +52,7 @@
         Button:
             size_hint: None,None
             size: dp(135), dp(135)
-            pos: dp(297), dp(147)
+            pos: dp(247), dp(147)
             background_color: 0,0,0,0
             on_press: root.manager.current = 'doors'
 
@@ -75,5 +75,20 @@
                 source: 'assets/img/map_spawn.png'
                 size_hint: (1, 1)
                 size: dp(135), dp(135)
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        #long
+        Button:
+            size_hint: None,None
+            size: dp(135), dp(135)
+            pos: dp(450), dp(200)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'long'
+
+            Image:
+                source: 'assets/img/alongicon.png'
+                size_hint: (1, 1)
+                size: dp(300), dp(140)
                 center_x: self.parent.center_x
                 center_y: self.parent.center_y
