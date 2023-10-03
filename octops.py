@@ -7,6 +7,7 @@
 
 #------------------------Imports-------------------------#
 
+#main file
 from kivy.config import Config 
 
 Config.set('kivy','window_icon','assets/img/main_mascot.png')
