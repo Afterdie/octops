@@ -8,7 +8,7 @@ from .screen_check import set_long
 
 # Import and load .kv file containing widget and layout info along with audio files to be played in the window
 Builder.load_file('screenLayout/long.kv')
-sound = SoundLoader.load('assets/audio/sitea_planted.wav')
+sound = SoundLoader.load('assets/audio/spawn_sticktog.wav')
 class LongScreen(Screen):
     pressed_buttons = []
 
