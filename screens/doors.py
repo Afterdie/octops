@@ -10,7 +10,7 @@ class DoorsScreen(Screen):
     verified = False
 
     def increment_value(self, label_index):
-        if(int(label_index.text) == 5):
+        if(int(label_index.text) == 9):
             label_index.text = "0"
         else:
             label_index.text = f"{int(label_index.text) + 1}"
@@ -18,7 +18,7 @@ class DoorsScreen(Screen):
 
     def decrement_value(self, label_index):
         if(int(label_index.text) == 0):
-            label_index.text = "5"
+            label_index.text = "9"
         else:
             label_index.text = f"{int(label_index.text) - 1}"
         DoorsScreen.verify(self)
