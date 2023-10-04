@@ -7,6 +7,8 @@
 
 Make sure to ⭐ the repo !
 
+## Link to [Figma](https://www.figma.com/file/VGuXGZllFERD0WiJMPcf71/octops?type=design&node-id=0%3A1&mode=design&t=BgxXxSRwKwxfBAkR-1) Design
+
 # Table of Contents
 
 1. [Introduction](#introduction)
