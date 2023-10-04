@@ -3,6 +3,7 @@ devMode = False
 sitea = devMode
 doors = devMode
 spawn = devMode
+long = devMode
 passcode = 1275 #linked to bomb hints png
 slider = [25, 55, 100] #linked to the marks on tracks
 time = 0
@@ -34,3 +35,10 @@ def set_time(val):
 
 def get_time():
     return time
+
+def set_long():
+    global long
+    long = not long
+
+def get_long():
+    return long

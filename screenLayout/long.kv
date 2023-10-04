@@ -1,0 +1,190 @@
+<LongScreen>:
+    FloatLayout:
+        # Initialize background splash image
+        BoxLayout:
+            id: splash_bg
+            opacity: 1
+            AsyncImage:
+                source: 'assets/img/a-long.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        # Initialize a matrix of 3x3 buttons each with unique id, text and position
+        Button:
+            id: 1
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(148), dp(347)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False # Ensure buttons stay enabled until puzzle is solved
+            on_press:
+                root.change_img(self, 1) # Call function to reveal button if bomb or not
+                root.check_product(self, 1) #call function to check if the cklicked button has bomb or not
+
+            Image:
+                id: 1
+                source: 'assets/img/symbols/hidden.png' # Initialize each button with a grey (hidden) image
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        Button:
+            id: 2
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(261), dp(347)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False # Ensure buttons stay enabled until puzzle is solved
+            on_press:
+                root.change_img(self, 2)
+                root.check_product(self, 2)
+
+            Image:
+                id: 2
+                source: 'assets/img/symbols/hidden.png' # Initialize each button with a grey (off) image
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+
+        Button:
+            id: 3
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(375), dp(347)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 3)
+                root.check_product(self, 3)
+
+            Image:
+                id: 3
+                source: 'assets/img/symbols/hidden.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        Button:
+            id: 4
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(148), dp(242)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 4)
+                root.check_product(self, 4)
+
+            Image:
+                id: 4
+                source: 'assets/img/symbols/hidden.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        Button:
+            id: 5
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(261), dp(242)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self,5)  # Use the correct button ID (5)
+                root.check_product(self,5)  # Use the correct button ID (5)
+
+            Image:
+                id: 5
+                source: 'assets/img/symbols/hidden.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        Button:
+            id: 6
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(375), dp(242)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 6)
+                root.check_product(self, 6)
+
+            Image:
+                id: 6
+                source: 'assets/img/symbols/hidden.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        Button:
+            id: 7
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(148), dp(137)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 7)
+                root.check_product(self, 7)
+
+            Image:
+                id: 7
+                source: 'assets/img/symbols/hidden.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        Button:
+            id: 8
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(261), dp(137)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 8)
+                root.check_product(self, 8)
+
+            Image:
+                id: 8
+                source: 'assets/img/symbols/hidden.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        Button:
+            id: 9
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(375), dp(137)
+            color: 157,128,99
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 9)
+                root.check_product(self, 9)
+
+            Image:
+                id: 9
+                source: 'assets/img/symbols/hidden.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+
+        # Initialize background image to be switched to on correct combination
+        BoxLayout:
+            id: splash_bg_after
+            orientation: 'vertical'
+            opacity: 0
+            AsyncImage:
+                source: 'assets/img/alongcomplete.png'  #add a file named "a_long_splash" that will be the ending screen
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        # Initialize return button to map window
+        Button:
+            size_hint: None,None
+            size: dp(60), dp(60)
+            pos: dp(12), dp(523)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'map'
+
+            Image:
+                source: 'assets/img/button_return.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
