@@ -11,7 +11,7 @@ sound = SoundLoader.load('assets/audio/sitea_planted.wav')
 class LongScreen(Screen):
     pressed_buttons = []
     flag = ""
-    correct = 1 # random.randint(1,10)
+    correct = random.randint(1,10)
 
     def show_overlay(self):  # Updating the window state after correct combination
         self.ids.splash_bg.opacity = 0
