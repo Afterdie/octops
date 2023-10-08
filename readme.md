@@ -545,7 +545,7 @@ The app should launch, and you can interact with it to explore its functionality
 
 # Issue Listing
 
-- [Issues <Description>](https://github.com/Afterdie/octops-final/issues)
+- [Issues <Description>](https://github.com/Afterdie/octops/issues)
 
 # Conclusion
 
