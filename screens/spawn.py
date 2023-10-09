@@ -10,7 +10,7 @@ class SpawnScreen(Screen):
     verified = False
 
     def slider_val_change(self):
-        if not SpawnScreen.verified and ((self.ids.slide1.value < slider[0]+5) and (self.ids.slide1.value > slider[0]-5 )) and ((self.ids.slide2.value < slider[2]+5)and ( self.ids.slide2.value > slider[2]-5 )) and ((self.ids.slide3.value < slider[2]+5) and (self.ids.slide3.value > slider[2]-5 )):
+        if not SpawnScreen.verified and ((self.ids.slide1.value < slider[0]+5) and (self.ids.slide1.value > slider[0]-5 )) and ((self.ids.slide2.value < slider[1]+5)and ( self.ids.slide2.value > slider[1]-5 )) and ((self.ids.slide3.value < slider[2]+5) and (self.ids.slide3.value > slider[2]-5 )):
             SpawnScreen.verified = True
             self.ids.splash_bg.opacity = 0
             self.ids.splash_bg_after.opacity = 1
