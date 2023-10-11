@@ -1,0 +1,234 @@
+<LongScreen>:
+    FloatLayout:
+        # Initialize background splash image
+        BoxLayout:
+            id: splash_bg
+            opacity: 1
+            AsyncImage:
+                source: 'assets/img/long_splash_after.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        # Initialize a matrix of 3x3 buttons each with unique id, text and position
+        Button:
+            id: 1
+            text: "e"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(100), dp(300)
+            disabled: True if splash_bg_after.opacity == 1 else False # Ensure buttons stay enabled until puzzle is solved
+            on_press:
+                root.change_img(self, 1) # Call function to toggle button image from grey to green upon press
+                root.check_product(self, 1) # Call function to check whether correct combination entered or not
+
+            Image:
+                id: 1
+                source: 'assets/img/symbols/off.png' # Initialize each button with a grey (off) image
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        Button:
+            id: 2
+            text: "e"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(521), dp(467)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 2)
+                root.check_product(self, 2)
+
+            Image:
+                id: 2
+                source: 'assets/img/symbols/off.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        Button:
+            id: 3
+            text: "a"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(475), dp(347)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 3)
+                root.check_product(self, 3)
+
+            Image:
+                id: 3
+                source: 'assets/img/symbols/off.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        Button:
+            id: 4
+            text: "a"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(148), dp(372)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 4)
+                root.check_product(self, 4)
+
+            Image:
+                id: 4
+                source: 'assets/img/symbols/off.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        Button:
+            id: 5
+            text: "e"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(261), dp(102)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 5)
+                root.check_product(self, 5)
+
+            Image:
+                id: 5
+                source: 'assets/img/symbols/off.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        Button:
+            id: 6
+            text: "a"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(525), dp(242)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 6)
+                root.check_product(self, 6)
+
+            Image:
+                id: 6
+                source: 'assets/img/symbols/off.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        Button:
+            id: 7
+            text: "e"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(148), dp(37)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 7)
+                root.check_product(self, 7)
+
+            Image:
+                id: 7
+                source: 'assets/img/symbols/off.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        Button:
+            id: 8
+            text: "a"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(261), dp(337)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 8)
+                root.check_product(self, 8)
+
+            Image:
+                id: 8
+                source: 'assets/img/symbols/off.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        Button:
+            id: 9
+            text: "a"
+            font_size: "30sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 255,255,255
+            size_hint: None,None
+            size: dp(30), dp(30)
+            pos: dp(375), dp(237)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 9)
+                root.check_product(self, 9)
+
+            Image:
+                id: 9
+                source: 'assets/img/symbols/off.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 10
+
+        # Initialize background image to be switched to on correct combination
+        BoxLayout:
+            id: splash_bg_after
+            orientation: 'vertical'
+            opacity: 0
+            AsyncImage:
+                source: 'assets/img/long_splash_after.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        # Initialize return button to map window
+        Button:
+            size_hint: None,None
+            size: dp(60), dp(60)
+            pos: dp(12), dp(523)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'map'
+
+            Image:
+                source: 'assets/img/button_return.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
