@@ -1,0 +1,297 @@
+<LongScreen>:
+    FloatLayout:
+        # Initialize background splash image
+        BoxLayout:
+            id: splash_bg
+            opacity: 1
+            AsyncImage:
+                source: 'assets/img/along.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        # Initialize a matrix of 3x3 buttons each with unique id, text and position
+        Button:
+            id: 1
+            #text: "Φ"
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(100), dp(100)
+            pos: dp(450), dp(430)
+            disabled: True if splash_bg_after.opacity == 1 else False # Ensure buttons stay enabled until puzzle is solved
+            on_press:
+                root.change_img(self, 1) # Call function to toggle button image from grey to green upon press
+                root.check_product(self, 1) # Call function to check whether correct combination entered or not
+            Image:
+                source: 'assets/img/terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+
+            Image:
+                id: 1
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x + 30
+                center_y: self.parent.top - 60
+
+        Button:
+            id: 2
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(100), dp(100)
+            pos: dp(250), dp(300)
+            disabled: True if splash_bg_after.opacity == 1 else False # Ensure buttons stay enabled until puzzle is solved
+            on_press:
+                root.change_img(self, 2) # Call function to toggle button image from grey to green upon press
+                root.check_product(self, 2) # Call function to check whether correct combination entered or not
+
+            Image:
+                source: 'assets/img/terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+
+            Image:
+                id: 2
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x + 30
+                center_y: self.parent.top - 60
+
+        Button:
+            id: 3
+            #text: "Φ"
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(250), dp(40)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 3)
+                root.check_product(self, 3)
+
+            Image:
+                source: 'assets/img/counter_terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+            
+            Image:
+                id: 3
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+
+        Button:
+            id: 4
+            #text: "Ѧ"
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(425), dp(350)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 4)
+                root.check_product(self, 4)
+
+            Image:
+                source: 'assets/img/counter_terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+            
+            Image:
+                id: 4
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+
+        Button:
+            id: 5
+            #text: "Φ"
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(430), dp(50)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self,5)  # Use the correct button ID (5)
+                root.check_product(self,5)  # Use the correct button ID (5)
+
+            Image:
+                source: 'assets/img/terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+
+            Image:
+                id: 5
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+
+        Button:
+            id: 6
+            #text: "Φ"
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(50), dp(75)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 6)
+                root.check_product(self, 6)
+
+            Image:
+                source: 'assets/img/counter_terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+            
+            Image:
+                id: 6
+                source: 'assets/img/symbols/off.png'
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x + 30
+                center_y: self.parent.top - 60
+
+        Button:
+            id: 7
+            #text: "Φ"
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(475), dp(200)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 7)
+                root.check_product(self, 7)
+
+            Image:
+                source: 'assets/img/terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+            
+            Image:
+                id: 7
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x + 30
+                center_y: self.parent.top - 60
+
+        Button:
+            id: 8
+           # text: "Φ"
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(150), dp(350)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 8)
+                root.check_product(self, 8)
+            
+            Image:
+                source: 'assets/img/counter_terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+            
+
+            Image:
+                id: 8
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+
+        Button:
+            id: 9
+            #text: "Φ"
+            font_size: "65sp"
+            color: 255,255,255
+            halign: 'center'
+            valign: 'bottom'
+            background_color: 0,0,0,0
+            size_hint: None,None
+            size: dp(80), dp(80)
+            pos: dp(340), dp(175)
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 9)
+                root.check_product(self, 9)
+
+            Image:
+                source: 'assets/img/counter_terrorist.png'
+                size: dp(130), dp(130)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+            
+            Image:
+                id: 9
+                source: 'assets/img/Empty.png' # Initialize each button with a grey (off) image
+                size: dp(100), dp(100)
+                center_x: self.parent.center_x
+                center_y: self.parent.top - 60
+
+        # Initialize background image to be switched to on correct combination
+        BoxLayout:
+            id: splash_bg_after
+            orientation: 'vertical'
+            opacity: 0
+            AsyncImage:
+                source: 'assets/img/alongcomplete.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+
+        # Initialize return button to map window
+        Button:
+            size_hint: None,None
+            size: dp(60), dp(60)
+            pos: dp(12), dp(523)
+            background_color: 0,0,0,0
+            on_press: root.manager.current = 'map'
+
+            Image:
+                source: 'assets/img/button_return.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y

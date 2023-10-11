@@ -7,6 +7,7 @@
 
 #------------------------Imports-------------------------#
 
+#main file
 from kivy.config import Config 
 
 Config.set('kivy','window_icon','assets/img/main_mascot.png')
@@ -28,6 +29,7 @@ from screens.siteB import SiteBScreen
 from screens.doors import DoorsScreen
 from screens.spawn import SpawnScreen
 from screens.map import MapScreen
+from screens.long import LongScreen
 
 #--------------------------App--------------------------#
 
@@ -45,6 +47,8 @@ class Octops(App):
         sm.add_widget(SiteAScreen(name='sitea'))
         sm.add_widget(DoorsScreen(name='doors'))
         sm.add_widget(SpawnScreen(name='spawn'))
+
+        sm.add_widget(LongScreen(name='long'))
 
         return sm
     
