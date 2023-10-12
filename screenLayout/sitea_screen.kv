@@ -44,7 +44,10 @@
             size_hint: None,None
             size: dp(80), dp(80)
             pos: dp(261), dp(347)
-            disabled: True
+            disabled: True if splash_bg_after.opacity == 1 else False
+            on_press:
+                root.change_img(self, 2)
+                root.check_product(self, 2)
 
 
 
