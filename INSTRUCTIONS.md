@@ -1,14 +1,7 @@
-<h3 align="center">
-<img src='https://github.com/Afterdie/octops-final/assets/68675629/e698fb58-4fe9-4df3-8274-3bca68caa76c'>
-</h3>
-<h1 align='center'>Octops</h1>
 
-###  The duration for the HACKATHON has been extended !
+# Instructions
 
-Make sure you ⭐ the repo !
-
-
-# Table of Contents
+## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Steps to Contribution](#contributing-guidelines)
@@ -39,28 +32,10 @@ Make sure you ⭐ the repo !
 5. [About the Game](#about-the-game)
 6. [File Structure](#file-structure)
 7. [Issue Listing](#issue-listing)
-8. [Conclusion](#conclusion)
 
-# Introduction
 
-Welcome to the open-source project, **Octops**! In Octops, we've combined the nostalgia of the original game **Counter Strike 1.6** with an exciting new gameplay concept.
-If you're eager to dive into the action and defuse the bomb, follow this documentation to set up and play the game. We'll guide you through the installation process and provide all the necessary information to get you started.
 
-# Contributing Guidelines
-
-We welcome contributions from the community to enhance our Octops project. To maintain consistency and organization, please follow these guidelines when creating branches for your contributions:
-
-### Branch Naming Convention
-
-- Branch names should follow the format: `rollnumber_name`.
-
-**Example:**
-
-- If your name is abc and roll number is 123, your branch name would be: `123_abc`.
-
-**⚠️ Not following the naming convention will lead to immediate disqualification**
-
-# Replit 
+## Replit 
 
 0. Create an account at [Replit](https://replit.com/signup), click on `Continue with GitHub`
 
@@ -278,7 +253,7 @@ my_dog.bark()
 This introduction provides a basic foundation for Python programming, but if you'd like a quick reference or in-depth details, you can explore the [Python Cheatsheet](https://www.pythoncheatsheet.org/cheatsheet/basics) for handy tips and commands. For comprehensive documentation and tutorials, visit the official [Python Documentation](https://docs.python.org/3.11/).
 
 ---
-# Introduction to Kivy
+## Introduction to Kivy
 
 Kivy is a free and open-source Python framework for creating cross-platform applications with a natural user interface, and it can be easily integrated into any python project.
 
@@ -464,43 +439,9 @@ Example:
 - `start()` method
 - `stop()` method
 
-# About the Game
+## About the Game
 
 The game consists of different screens based on Counter Strike 1.6 theme. There's a map which gives access to different locations. Each screen presents players with a distinct challenge or mission. There are hints which can be located on the bomb. To succeed, players must solve puzzles, and apply their skills effectively. Once all the tasks are accomplished, players gain access to the bomb and must defuse it to win the round.
-
-# File Structure
-
-The project is structured into several folders and files:
-
-### 1. **assets/**
-
-The `assets/` directory is intended for storing assets such as images, fonts, audio, and other resources that your application may need. These assets can be accessed within your Kivy files.
-
-Example:
-- `assets/main_logo.png`
-
-### 2. **screen_layout/**
-
-The `screen_layout/` directory contains the Kivy language (KV) files that define the structure and appearance of the app's screens and their layouts. These KV files are built to their respective screens in the `screens/` folder using `Builder.load_file()`.
-
-Example:
-- `screen_layout/main_screen.kv`
-- `screen_layout/map_screen.kv`
-
-### 3. **screens/**
-
-The `screens/` directory is intended for Python files that define the behavior and logic of individual screens within your application. These screens are managed and coordinated using Kivy's `ScreenManager` in the main Python file.
-
-Example:
-- `screens/main_screen.py`
-- `screens/map_screen.py`
-
-### 4. **octops.py**
-
-`octops.py` is the main Python script that acts as the entry point of your Kivy application. It connects and manages all the components of your application, including screens, transitions, and user interactions. This script initializes the Kivy app and sets up the screen manager.
-
-Example:
-- `octops.py`
 
 ## How It Works
 
@@ -546,15 +487,8 @@ The app should launch, and you can interact with it to explore its functionality
 
 - [Issues <Description>](https://github.com/Afterdie/octops-final/issues)
 
-# Conclusion
+## Conclusion
 
 Thank you for being part of our community, and we look forward to sharing countless thrilling moments as we defuse bombs and tackle new challenges together!
 
 
-<p align="center">
-<a href="https://twitter.com/msckiit" target="_blank"><img align="center" src="https://github.com/MLSAKIIT/.github/assets/68675629/89732800-b189-402d-8b20-141b00fbac22" alt="MLSAKIIT" height="35" width="35" /></a>
-<a href="https://www.facebook.com/msakiit" target="_blank"><img align="center" src="https://github.com/MLSAKIIT/.github/assets/68675629/15dca717-70a3-406d-af82-8e25e91e6a91" alt="MLSAKIIT" height="35" width="35" /></a>
-<a href="https://discord.com/invite/P6VCP2Ry3q" target="_blank"><img align="center" src="https://github.com/MLSAKIIT/.github/assets/68675629/a5d1747f-b59f-487e-a473-dd9865864de6" alt="MLSAKIIT" height="35" width="35" /></a>
-<a href="https://www.linkedin.com/company/msckiit/" target="_blank"><img align="center" src="https://github.com/MLSAKIIT/.github/assets/68675629/73d3360f-c849-4171-ac81-02ebf291133f" alt="MLSAKIIT" height="35" width="35"/></a>
-<a href="https://www.instagram.com/msckiit/" target="_blank"><img align="center" src="https://github.com/MLSAKIIT/.github/assets/68675629/1a71caa3-e81a-4b84-ab3e-6c01b3e6df93" alt="MLSAKIIT" height="35" width="35" /></a>
-</p> 
