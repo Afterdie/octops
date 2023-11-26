@@ -26,7 +26,7 @@ The game consists of different screens based on Counter Strike 1.6 theme. There'
 ## Local Development
 To set up the project locally, check out the [`INSTRUCTIONS.md`](INSTRUCTIONS.md) file and follow the steps mentioned there.
 
-To build the game executable yourself and run it, check out the [`BUILD.md`](build\README.md) file.
+To build the game executable yourself and run it, check out the [`build/README.md`](build/README.md) file.
 
 For contributions, check out the [`CONTRIBUTING.md`](CONTRIBUTING.md) file and be sure to adhere to the guidelines mentioned there.
 
